@@ -118,6 +118,9 @@
 
         .feature_card_out {
             height: 100%;
+            --rotateX: 0deg;
+            --rotateY: 0deg;
+            transition: transform 0.3s ease-out; /* Smooth transition on transform */
         }
 
         .feature_box {
@@ -127,6 +130,9 @@
             padding: 4.8rem 4.6rem 4.8rem 7.9rem;
             height: 100%;
             position: relative;
+
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY));
+    transition: transform 0.3s ease-out; /* Smooth transition on rotation */
 
             @media (max-width: 1479px) {
                 padding: 3.2rem 3rem 3.2rem 6rem;

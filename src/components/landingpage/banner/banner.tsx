@@ -50,15 +50,15 @@ const Banner = () => {
                 if (error instanceof AxiosError) {
                     if (error.response) {
                         if (error.response.data.message.includes("already")) {
-                            toast.error("You've already joined the waitlist");
+                            toast.error("You've already joined the waitlist", { id: "waitlist" });
                         } else {
-                            toast.error(error.response.data.message);
+                            toast.error(error.response.data.message, { id: "waitlist" });
                         }
                     } else {
-                        toast.error(error.message);
+                        toast.error(error.message, { id: "waitlist" });
                     }
                 } else {
-                    toast.error("An unknown error occurred");
+                    toast.error("An unknown error occurred", { id: "waitlist" });
                 }
                 setLoading(false);
             }

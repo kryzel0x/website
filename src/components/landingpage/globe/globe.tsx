@@ -16,10 +16,10 @@ const Globe = () => {
                     </div>
                     <div className="globe_lists">
                         <div className="globe_item bookmarkers">
-                            <h3>Bookmarkers</h3>
+                            <h3>Bookmakers</h3>
                             <ul>
                                 <li>
-                                    <p>Launch a sportsbook with no code or risk assessment expertise</p>
+                                    <p>Launch a sportsbook with no code or risk management expertise</p>
                                 </li>
                                 <li>
                                     <p>Enjoy minimal capital requirements and hassle-free operations</p>

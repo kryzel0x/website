@@ -1,5 +1,5 @@
-import Image, { StaticImageData } from 'next/image'
-import React, { useRef } from 'react'
+import Image, { StaticImageData } from 'next/image';
+import React, { useRef } from 'react';
 import { motion } from "framer-motion";
 
 type PropTypes = {
@@ -7,7 +7,7 @@ type PropTypes = {
     hover: StaticImageData;
     bg: StaticImageData;
     title: string;
-}
+};
 
 const FeatureCard = ({ icon, hover, bg, title }: PropTypes) => {
     const cardRef = useRef<HTMLDivElement>(null);
@@ -34,10 +34,15 @@ const FeatureCard = ({ icon, hover, bg, title }: PropTypes) => {
         cardRef.current.style.setProperty("--rotateX", `0deg`);
         cardRef.current.style.setProperty("--rotateY", `0deg`);
     };
-    const animate = (typeof document !== "undefined" && document.body.clientWidth < 576) ? {} : {
-        onMouseMove: handleMouseMove,
-        onMouseLeave: handleMouseLeave,
-    }
+
+    const animate =
+        typeof document !== "undefined" && document.body.clientWidth < 576
+            ? {}
+            : {
+                  onMouseMove: handleMouseMove,
+                  onMouseLeave: handleMouseLeave,
+              };
+
     return (
         <motion.div
             ref={cardRef}
@@ -48,11 +53,7 @@ const FeatureCard = ({ icon, hover, bg, title }: PropTypes) => {
             }}
             className="feature_card_out"
         >
-            <motion.div
-                style={{
-                    transform: "rotateX(var(--rotateX)) rotateY(var(--rotateY))",
-                }}
-                className="feature_box">
+            <motion.div className="feature_box">
                 <div className="feature_icon">
                     <Image src={icon} alt="feature" className="icon" />
                     <Image src={hover} alt="feature" className="hover" />
@@ -61,7 +62,7 @@ const FeatureCard = ({ icon, hover, bg, title }: PropTypes) => {
                 <h3>{title}</h3>
             </motion.div>
         </motion.div>
-    )
-}
+    );
+};
 
-export default FeatureCard
+export default FeatureCard;
