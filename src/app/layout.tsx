@@ -4,7 +4,7 @@ import "./index.scss";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-    title: "Kryzel",
+    title: "Kryzel - AI-Powered Decentralized Sports Prediction Layer",
     description: "World’s First AI-Powered Decentralized Sports Betting Protocol",
 };
 export default function RootLayout({
@@ -21,11 +21,12 @@ export default function RootLayout({
                 <meta name="description" content={"World’s First AI-Powered Decentralized Sports Betting Protocol"} />
                 <meta name="author" content="GFFCA" />
 
-                <meta property="og:title" content="Kryzel" />
+                <meta property="og:title" content="Kryzel - AI-Powered Decentralized Sports Prediction Layer" />
                 <meta property="og:description" content="World’s First AI-Powered Decentralized Sports Betting Protocol" />
-                <meta property="og:image" content="/logo/logo.png" />
+                <meta property="og:image" content="/logo/logo.png
+                " />
 
-                <title>{"Kryzel"}</title>
+                <title>{"Kryzel - AI-Powered Decentralized Sports Prediction Layer"}</title>
                 <link rel="shortcut icon" href="favicon.ico" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />

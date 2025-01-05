@@ -63,6 +63,12 @@ const Roadmap = () => {
                         start: "top 50%",
                         scrub: true,
                         end: "bottom 40%",
+                        onprogress: (event) => {
+                            console.log({ event })
+                        },
+                        onUpdate: ({ progress }) => {
+                            gsap.to(".filled", { height: `${100 - (progress * 100)}%` })
+                        },
                     }
                 })
                 .from(".roadmap_box", {
@@ -84,6 +90,9 @@ const Roadmap = () => {
                         <p className="desc_txt">From Concept to Reality: Product Delivery Roadmap</p>
                         <div className="roadmap_map">
                             <ul>
+                                <li className="line">
+                                    <div className="filled"></div>
+                                </li>
                                 {
                                     content.map((item, index) => {
                                         return (

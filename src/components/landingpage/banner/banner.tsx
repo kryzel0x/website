@@ -119,7 +119,7 @@ const Banner = () => {
                 <Image src={logo} alt="logo" className='logo' />
                 <h2>Congratulations, You&apos;re on the list! 🎉</h2>
                 <p>Thank you for joining our waitlist. We&apos;ll keep you updated with the latest news and let you know when it&apos;s your turn!</p>
-                <Button onClick={() => { setShow(false); }} >Okay</Button>
+                {/* <Button onClick={() => { setShow(false); }} >Okay</Button> */}
             </Modal>
         </section>
     )
