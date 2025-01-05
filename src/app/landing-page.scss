@@ -1,0 +1,10 @@
+@import "../../public/theme/_var.scss";
+
+.landing_page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    z-index: 1;
+    position: relative;
+    overflow-x: hidden;
+}

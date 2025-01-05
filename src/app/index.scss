@@ -1,0 +1,143 @@
+@import "../styles/index.scss";
+@import '~bootstrap/scss/bootstrap';
+@import "../../public/theme/_var.scss";
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    max-width: 192rem;
+    margin-inline: auto;
+    position: relative;
+    background-color: $bodybg;
+    color: $white;
+    font-family: $basefont;
+    overflow-x: clip;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+img,
+svg,
+canvas,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+a,
+span {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px $black inset !important;
+    -webkit-text-fill-color: $white !important;
+    caret-color: $white;
+    transition: 4000s ease-in-out;
+}
+
+.clickable {
+    cursor: pointer !important;
+}
+
+
+.container-fluid {
+    padding: 0 1.5rem;
+}
+
+.container {
+    padding: 0 1.5rem;
+
+    @media (min-width: 1400px) {
+        max-width: 130rem;
+    }
+
+    @media (min-width: 1600px) {
+        max-width: 154.2rem;
+    }
+}
+
+.sec_heading {
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 8.4rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+    width: fit-content;
+    margin-inline: auto;
+    background: linear-gradient(180deg, #1FECFF 0%, #009DFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: 1779px) {
+        line-height: 1.4;
+        font-size: 6.4rem;
+    }
+
+    @media (max-width: 1679px) {
+        font-size: 5.8rem;
+    }
+
+    @media (max-width: 1479px) {
+        font-size: 3.6rem;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 3.2rem;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 2.6rem;
+    }
+}

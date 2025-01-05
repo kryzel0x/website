@@ -1,0 +1,159 @@
+@import "../../../../public/theme/_var.scss";
+
+.powered_by {
+    position: relative;
+    z-index: 1;
+    padding: 17.2rem 0 15.8rem;
+
+    @media (max-width: 1479px) {
+        padding: 10rem 0;
+    }
+
+    @media (max-width: 1199px) {
+        padding: 8rem 0;
+    }
+
+    @media (max-width: 767px) {
+        padding: 4.6rem 0;
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 33.4rem;
+        pointer-events: none;
+        background: url("../../../../public/icons/poweredby-light.png") top center/contain no-repeat;
+
+        @media (max-width: 1479px) {
+            height: 24rem;
+        }
+    }
+
+    h3 {
+        font-size: 2.8rem;
+        font-weight: 400;
+        line-height: 3.4rem;
+        text-align: center;
+        margin-bottom: 3rem;
+
+        @media (max-width: 1679px) {
+            font-size: 2.4rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 1479px) {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 1199px) {
+            font-size: 1.8rem;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 1.6rem;
+            margin-bottom: 1.4rem;
+        }
+    }
+
+    h4 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 2.3rem;
+        text-align: center;
+        margin: 7.8rem 0 3rem;
+
+        @media (max-width: 1679px) {
+            font-size: 2.2rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 1479px) {
+            font-size: 1.8rem;
+        }
+
+        @media (max-width: 1199px) {
+            font-size: 1.5rem;
+            margin: 3rem 0 1.4rem;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 1.4rem;
+        }
+    }
+
+    .aptos {
+        width: 33.7rem;
+        margin: 0 auto;
+        display: block;
+
+        @media (max-width: 1479px) {
+            width: 24rem;
+        }
+
+        @media (max-width: 1199px) {
+            width: 16rem;
+        }
+
+        @media (max-width: 767px) {
+            width: 14rem;
+        }
+    }
+
+    .partners {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 399px) {
+            flex-wrap: wrap;
+        }
+
+        >div {
+            background: linear-gradient(180deg, #212121 0%, #000000 100%) padding-box, linear-gradient(191.56deg, #DADADA 8.49%, rgba(0, 0, 0, 0) 91.51%) border-box;
+            border: 1.05px solid transparent;
+            border-radius: 1.4rem;
+            padding: 1.1rem 2.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 575px) {
+                padding: 0.8rem 1.2rem;
+            }
+
+            @media (max-width: 399px) {
+                width: 100%;
+                padding: 1.6rem 4rem;
+            }
+
+
+            &:not(:last-child) {
+                margin-right: 4.7rem;
+
+                @media (max-width: 575px) {
+                    margin-right: 2rem;
+                }
+
+                @media (max-width: 399px) {
+                    margin: 0 0 1rem;
+                }
+
+            }
+
+            img {
+                width: 24.1rem;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+
+                @media (max-width: 399px) {
+                    width: 12rem;
+                }
+            }
+        }
+    }
+
+}

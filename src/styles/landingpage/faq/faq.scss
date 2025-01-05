@@ -1,0 +1,203 @@
+@import "../../../../public/theme/_var.scss";
+
+.faq_design {
+    padding: 12.8rem 0 26.8rem;
+
+    @media (max-width: 1479px) {
+        padding: 10rem 0;
+    }
+
+    @media (max-width: 1199px) {
+        padding: 8rem 0;
+    }
+
+    @media (max-width: 767px) {
+        padding: 4.6rem 0;
+    }
+
+    .container {
+        @media (min-width: 1400px) {
+            max-width: 138.2rem;
+        }
+    }
+
+    .accordion {
+        margin-top: 8.5rem;
+
+        @media (max-width: 1479px) {
+            margin-top: 6rem;
+        }
+
+        @media (max-width: 1199px) {
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 767px) {
+            margin-top: 2rem;
+        }
+
+        .accordion-item {
+            background-color: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+
+            &:not(:last-child) {
+                margin-bottom: 2.1rem;
+            }
+
+            .accordion-header {
+                .accordion-button {
+                    background: linear-gradient(180deg, $black29, $black29) padding-box, linear-gradient(180deg, #1FECFF 0%, #009DFF 100%) border-box;
+                    border: 1px solid transparent;
+                    font-size: 3rem;
+                    font-weight: 700;
+                    line-height: 3.6rem;
+                    color: $gray90;
+                    padding: 1.8rem 3.2rem 1.8rem 5.3rem;
+                    border-radius: 1.2rem !important;
+                    box-shadow: none !important;
+
+                    @media (max-width: 1779px) {
+                        line-height: 1.4;
+                        font-size: 2.8rem;
+                        padding: 1.6rem 2.8rem 1.6rem 4.6rem;
+                    }
+
+                    @media (max-width: 1679px) {
+                        font-size: 2.4rem;
+                    }
+
+                    @media (max-width: 1479px) {
+                        font-size: 2.2rem;
+                    }
+
+                    @media (max-width: 991px) {
+                        font-size: 1.8rem;
+                    }
+
+                    @media (max-width: 575px) {
+                        font-size: 1.6rem;
+                        padding: 1.2rem 2rem 1.2rem 3.2rem;
+                    }
+
+                    @media (max-width: 379px) {
+                        font-size: 1.4rem;
+                    }
+
+                    &::before {
+                        content: "";
+                        width: 1.1rem;
+                        height: 1.1rem;
+                        border-radius: 50%;
+                        background: linear-gradient(180deg, #1FECFF 0%, #009DFF 100%);
+                        top: 50%;
+                        position: absolute;
+                        left: 2.6rem;
+                        transform: translateY(-50%);
+
+                        @media (max-width: 1779px) {
+                            left: 2rem;
+                        }
+
+                        @media (max-width: 575px) {
+                            left: 1rem;
+                            width: 0.8rem;
+                            height: 0.8rem;
+                        }
+
+                    }
+
+                    &::after {
+                        content: "";
+                        border: none;
+                        background-image: url("../../../../public/icons/minus.svg");
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 3rem;
+                        height: 3rem;
+
+                        @media (max-width: 1479px) {
+                            width: 2.4rem;
+                            height: 2.4rem;
+                        }
+
+                        @media (max-width: 575px) {
+                            width: 1.8rem;
+                            height: 1.8rem;
+                        }
+                    }
+
+                    &.collapsed {
+                        &::after {
+                            background-image: url("../../../../public/icons/plus.svg");
+                        }
+                    }
+                }
+            }
+
+            .accordion-body {
+                background: linear-gradient(180deg, #383838, #383838) padding-box, linear-gradient(191.56deg, #DADADA 8.49%, rgba(0, 0, 0, 0) 91.51%) border-box;
+                border: 1px solid transparent;
+                margin-top: 1.1rem;
+                border-radius: 1.2rem;
+                padding: 3rem 5.3rem;
+
+                @media (max-width: 1679px) {
+                    padding: 2.4rem 4rem;
+                }
+
+                @media (max-width: 1479px) {
+                    padding: 2rem 3rem;
+                }
+
+                @media (max-width: 991px) {
+                    padding: 1.6rem 2rem;
+                }
+
+                p {
+                    color: #E0E0E0;
+                    font-weight: 400;
+                    font-size: 2rem;
+
+                    @media (max-width: 1679px) {
+                        font-size: 1.8rem;
+                    }
+
+                    @media (max-width: 1479px) {
+                        font-size: 1.6rem;
+                    }
+
+                    @media (max-width: 991px) {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                ul {
+                    margin-top: 1.9rem;
+                    padding-left: 2.6rem;
+
+                    li {
+                        display: flex;
+                        align-items: flex-start;
+
+                        &::before {
+                            background: linear-gradient(90deg, #FFFFFF 0%, #767676 100%);
+                            content: "";
+                            width: 1.1rem;
+                            height: 1.1rem;
+                            border-radius: 50%;
+                            flex-shrink: 0;
+                            margin-right: 1.1rem;
+                            transform: translateY(0.9rem);
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
