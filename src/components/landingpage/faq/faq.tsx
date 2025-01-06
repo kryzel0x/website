@@ -13,7 +13,7 @@ const Faqs = () => {
                 { name: "Liquidity & Risk Management", desc: "A community-owned Liquidity Pool ensures financial stability and fairness.", },
                 { name: "Revenue Sharing", desc: "LP stakers share in platform profits, aligning interests.", },
                 { name: "AI-Driven Predictions", desc: "Dynamic, user-focused markets driven by AI and community input.", },
-                { name: "Seamless Integration", desc: "Effortless Web2-to-Web3 transition for SBPs with transparency and security.", },
+                { name: "Seamless Integration", desc: "Effortless Web2-to-Web3 transition for Bookmakers with transparency and security.", },
                 { name: "Decentralized Ownership", desc: "Kryzel DAO empowers users to shape the platform’s future.", },
             ]
         },

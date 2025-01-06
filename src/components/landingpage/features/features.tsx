@@ -26,12 +26,12 @@ import FeatureCard from './feature-card';
 
 const Features = () => {
     const features = [
-        { icon: revenue, hover: revenueColored, bg: revenueBg, title: "Revenue Sharing with Liquidity Providers." },
-        { icon: risk, hover: riskColored, bg: riskBg, title: "Liquidity & Risk Management through community-owned pools ensure stability and fairness." },
-        { icon: providing, hover: providingColored, bg: providingBg, title: "Providing and Leveraging the capital for sportsbooks" },
-        { icon: ai, hover: aiColored, bg: aiBg, title: "AI-powered risk management and trade creation" },
-        { icon: seamless, hover: seamlessColored, bg: seamlessBg, title: "Seamlessly Integrating both web2 & web3 sportsbooks and their users." },
-        { icon: decentralized, hover: decentralizedColored, bg: decentralizedBg, title: "Decentralized Ownership through Kryzel DAO lets its community members shape/drive the platform." },
+        { icon: revenue, hover: revenueColored, bg: revenueBg, title: "Revenue Sharing with Liquidity Providers" },
+        { icon: risk, hover: riskColored, bg: riskBg, title: "Risk Pooling Ensures Stability & Scalability" },
+        { icon: providing, hover: providingColored, bg: providingBg, title: "Capital Leverage Option for Sportsbooks" },
+        { icon: ai, hover: aiColored, bg: aiBg, title: "AI-Driven Risk Management and Trade Creation" },
+        { icon: seamless, hover: seamlessColored, bg: seamlessBg, title: "Seamless Onboarding of Web2 Users with Aptos Keyless Wallets" },
+        { icon: decentralized, hover: decentralizedColored, bg: decentralizedBg, title: "Community Ownership/Governance via Kryzel DAO" },
     ]
     return (
         <section className="features">

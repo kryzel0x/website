@@ -1,10 +1,18 @@
 @import "../../../../public/theme/_var.scss";
 
 .globe_design {
-    padding: 13rem 0 47.6rem;
+    padding: 10rem 0 47.6rem;
+
+    @media (max-width: 1579px) {
+        padding: 10rem 0 26rem;
+    }
 
     @media (max-width: 1479px) {
-        padding: 10rem 0 26rem;
+        padding: 10rem 0 34rem;
+    }
+
+    @media (max-width: 1289px) {
+        padding: 10rem 0 30rem;
     }
 
     @media (max-width: 1199px) {
@@ -32,6 +40,11 @@
             transform: scale(0.8);
         }
 
+        // @media (max-height: 780px) {
+        //     transform: scale(0.8);
+        //     margin: -6rem auto 0;
+        // }
+
         .globe_logo {
             position: relative;
 
@@ -39,6 +52,14 @@
                 width: 39.4rem;
                 display: block;
                 margin: 0 auto;
+
+                @media (min-width: 1200px) {
+                    transform: scale(0.8);
+                }
+
+                @media (max-width: 1479px) {
+                    width: 26rem;
+                }
 
                 @media (max-width: 1399px) {
                     width: 26rem;
@@ -76,6 +97,10 @@
             .globe_item {
                 position: absolute;
 
+                @media (max-width: 1399px) {
+                    width: fit-content;
+                }
+
                 @media (max-width: 767px) {
                     position: static;
 
@@ -99,7 +124,7 @@
 
                     @media (max-width: 1679px) {
                         line-height: 1.4;
-                        font-size: 4rem;
+                        font-size: 3.2rem;
                     }
 
                     @media (max-width: 1479px) {
@@ -138,9 +163,14 @@
                     top: 84%;
                     left: -350px;
 
+                    @media (max-width: 1479px) {
+                        top: 101%;
+                        left: -430px;
+                    }
+
                     @media (max-width: 1399px) {
                         top: 90%;
-                        left: -434px;
+                        left: -374px;
                     }
 
                     h3 {
@@ -154,21 +184,31 @@
                             }
                         }
                     }
+
+                    // @media (min-width: 992px) {
+                    //     ul {
+                    //         scale: 0.7;
+                    //     }
+                    // }
                 }
 
                 &.community {
-                    top: -28px;
-                    left: 86%;
-                    scale: 0.4;
+                    top: 112px;
+                    right: -570px;
+
+                    @media (max-width: 1679px) {
+                        top: 110px;
+                        right: -54rem;
+                    }
 
                     @media (max-width: 1479px) {
-                        top: 2rem;
-                        left: 78%;
+                        top: 7.3rem;
+                        left: 92%;
                     }
 
                     @media (max-width: 1399px) {
-                        top: -2.7rem;
-                        left: 78%;
+                        top: 6.8rem;
+                        left: 118%;
                     }
 
                     @media (max-width: 767px) {
@@ -182,11 +222,26 @@
                             transform: translateX(-100%) translateY(-50%);
                         }
                     }
+
+                    ul {
+                        &::before {
+                            height: calc(100% - 4.2rem);
+
+                            @media (max-width: 1399px) {
+                                height: calc(100% - 2.9rem);
+                            }
+                        }
+                    }
                 }
 
                 ul {
                     width: 55.2rem;
+                    transform-origin: top center;
                     position: relative;
+
+                    @media (max-width: 1399px) {
+                        width: 40rem;
+                    }
 
                     @media (max-width: 767px) {
                         width: 100%;
