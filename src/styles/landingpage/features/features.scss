@@ -1,11 +1,11 @@
 @import "../../../../public/theme/_var.scss";
 
 .features {
-    padding: 17.9rem 0 10.3rem;
+    padding: 10.3rem 0 ;
     position: relative;
     z-index: 1;
 
-    @media (max-width: 1479px) {
+    @media (max-width: 1679px) {
         padding: 10rem 0;
     }
 
