@@ -9,45 +9,48 @@ const Roadmap = () => {
     const [loaded, setLoaded] = useState(false);
     const content = [
         {
-            title: "Q2 2024",
+            title: "Q4 2024",
             list: [
                 "Architecture Planning and Designing",
                 "Team Building",
             ],
         },
         {
-            title: "Q3 2024",
-            list: [
-                "Smart  Contract Development",
-                "Front-end Development",
-            ],
-        },
-        {
-            title: "Q4 2024",
+            title: "Q1 2025",
             list: [
                 "Testnet Deployment",
                 "Kryzel Web Application Launch",
-                "AMM Module Development",
+                "Backend Development",
             ],
-        },
-        {
-            title: "Q1 2025",
-            list: [
-                "Mainnet Deployment",
-                "Offchain Ai implementaion for bet creation and risk management",
-                "Diversifying betting ranges - Parlays, spot bettings",
-            ],
-            className: "lg_items"
         },
         {
             title: "Q2 2025",
             list: [
-                "Onchain Ai implementaion",
-                "User order book mechanism",
-                "Bespoke bet generation",
-                "Local currency betting",
+                "Mainnet Deployment",
+                "Payment Integration",
+                "Partnership with Bookmakers",
+                "Start with 5 Sports and S.E. Asia",
             ],
         },
+        {
+            title: "Q3 2025",
+            list: [
+                "KRZ Token Launch",
+                "Governance Token Launch",
+                "Shopify Front-end for Bookmakers",
+                "AI-powered Market Creation",
+            ],
+            className: "lg_items"
+        },
+        // {
+        //     title: "Q2 2025",
+        //     list: [
+        //         "Onchain Ai implementaion",
+        //         "User order book mechanism",
+        //         "Bespoke bet generation",
+        //         "Local currency betting",
+        //     ],
+        // },
     ]
     useEffect(() => {
         if (typeof window !== "undefined") {
