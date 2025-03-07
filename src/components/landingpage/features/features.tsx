@@ -1,4 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap';
+// import video from "../../../../public/videos/video.webm"
 import revenue from "../../../../public/icons/features/revenue.png"
 import revenueColored from "../../../../public/icons/features/revenue-colored.png"
 import revenueBg from "../../../../public/icons/features/revenue-icon-bg.png"
@@ -23,6 +24,7 @@ import decentralized from "../../../../public/icons/features/decentralized.png"
 import decentralizedColored from "../../../../public/icons/features/decentralized-colored.png"
 import decentralizedBg from "../../../../public/icons/features/decentralized-icon-bg.png"
 import FeatureCard from './feature-card';
+const video = '/videos/video.webm';
 
 const Features = () => {
     const features = [
@@ -34,24 +36,35 @@ const Features = () => {
         { icon: decentralized, hover: decentralizedColored, bg: decentralizedBg, title: "Community Ownership/Governance via Kryzel DAO" },
     ]
     return (
-        <section className="features">
-            <Container>
-                <div className="features_in">
-                    <h2 className="sec_heading">Key Features</h2>
-                    <Row>
-                        {
-                            features.map((feature, index) => (
-                                <Col key={index} xl={4} sm={6}>
-                                    <FeatureCard
-                                        {...feature}
-                                    />
-                                </Col>
-                            ))
-                        }
-                    </Row>
-                </div>
-            </Container>
-        </section>
+        <>
+            <section className="video_sec">
+                <Container>
+                    <div className="video_sec_in">
+                        <video loop autoPlay muted playsInline>
+                            <source src={video} />
+                        </video>
+                    </div>
+                </Container>
+            </section>
+            <section className="features">
+                <Container>
+                    <div className="features_in">
+                        <h2 className="sec_heading">Key Features</h2>
+                        <Row>
+                            {
+                                features.map((feature, index) => (
+                                    <Col key={index} xl={4} sm={6}>
+                                        <FeatureCard
+                                            {...feature}
+                                        />
+                                    </Col>
+                                ))
+                            }
+                        </Row>
+                    </div>
+                </Container>
+            </section>
+        </>
     )
 }
 

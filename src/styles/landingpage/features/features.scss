@@ -1,7 +1,7 @@
 @import "../../../../public/theme/_var.scss";
 
 .features {
-    padding: 10.3rem 0 ;
+    padding: 10.3rem 0;
     position: relative;
     z-index: 1;
 
@@ -120,7 +120,8 @@
             height: 100%;
             --rotateX: 0deg;
             --rotateY: 0deg;
-            transition: transform 0.3s ease-out; /* Smooth transition on transform */
+            transition: transform 0.3s ease-out;
+            /* Smooth transition on transform */
         }
 
         .feature_box {
@@ -131,8 +132,9 @@
             height: 100%;
             position: relative;
 
-    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY));
-    transition: transform 0.3s ease-out; /* Smooth transition on rotation */
+            transform: rotateX(var(--rotateX)) rotateY(var(--rotateY));
+            transition: transform 0.3s ease-out;
+            /* Smooth transition on rotation */
 
             @media (max-width: 1479px) {
                 padding: 3.2rem 3rem 3.2rem 6rem;
@@ -240,6 +242,25 @@
                     color: $white;
                 }
             }
+        }
+    }
+}
+
+.video_sec {
+    position: relative;
+    z-index: 2;
+
+    .video_sec_in {
+        background: linear-gradient(112.77deg, #444444 2.2%, #000000 99.88%) padding-box, linear-gradient(180deg, #1FECFF 0%, #009DFF 100%) border-box;
+        border: 1px solid transparent;
+        border-radius: 4rem;
+        padding: 0.8rem;
+        width: 85%;
+        margin: 0 auto;
+
+        video {
+            width: 100%;
+            border-radius: 3.2rem;
         }
     }
 }
