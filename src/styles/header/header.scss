@@ -16,10 +16,13 @@
     }
 
     .header_in {
-        @media (max-width: 575px) {
-            display: flex;
-            justify-content: center;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // @media (max-width: 575px) {
+        //     display: flex;
+        //     justify-content: center;
+        // }
 
         .logo {
             img {
